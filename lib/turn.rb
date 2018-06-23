@@ -1,4 +1,7 @@
-
+def turn(board,index)
+  puts "Please enter 1-9:"
+  
+end
 
 def valid_move?(board, index)
   if position_taken?(board,index) == FALSE && index < 9 && index >= 0
