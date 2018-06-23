@@ -1,11 +1,4 @@
-def turn(board,index)
-  puts "Please enter 1-9:"
-input = gets.strip
-index = input_to_index(input)
 
-move(board,index)
-display_board(board)
-end
 
 def valid_move?(board, index)
   if position_taken?(board,index) == FALSE && index < 9 && index >= 0
@@ -37,4 +30,14 @@ end
 
 def move(board,index,player = "X")
   board[index] = player
+end
+
+def turn(board,index)
+  puts "Please enter 1-9:"
+  input = gets.strip
+  index = input_to_index(input)
+  if valid_move?(board,index) == TRUE
+    move(board,index)
+    display_board(board)
+  
 end
