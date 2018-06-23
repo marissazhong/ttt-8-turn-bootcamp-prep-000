@@ -39,5 +39,7 @@ def turn(board,index)
   if valid_move?(board,index) == TRUE
     move(board,index)
     display_board(board)
-  
+  else
+    puts "#{input} is not a valid number."
+    turn(board,index)
 end
