@@ -41,6 +41,6 @@ def turn(board)
     display_board(board)
   else
     puts "#{input} is not a valid number."
-    turn(board,index)
+    turn(board)
   end
 end
