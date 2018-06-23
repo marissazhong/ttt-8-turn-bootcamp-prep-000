@@ -42,4 +42,5 @@ def turn(board)
   else
     puts "#{input} is not a valid number."
     turn(board,index)
+  end
 end
